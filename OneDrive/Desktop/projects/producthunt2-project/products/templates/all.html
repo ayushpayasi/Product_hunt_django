@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+{% for product in products %}
+<div>{{ product.title }} </div>
+<div class='container'> <img src="{{ product.icon.url }}" width=200 height= 200> </img> </div>
+{% endfor %}
+
+
+{% endblock %}
